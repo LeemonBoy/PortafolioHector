@@ -1,0 +1,14 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #6B7445, #BBCB2E);
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
