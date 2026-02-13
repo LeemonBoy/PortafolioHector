@@ -1,14 +1,113 @@
+
 body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    color: #2c3e50;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right, #6B7445, #BBCB2E);
+    line-height: 1.6;
 }
 
-main {
-    flex: 1;
+
+.navbar {
+    font-weight: 600;
+}
+.navbar-brand {
+    font-size: 1.3rem;
+}
+.nav-link {
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    r: #ffc107 !important; 
 }
 
-.footer {
+
+.hero {
+    background: linear-gradient(to right, #0d6efd, #198754);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+.hero h1 {
+    nt-size: 3rem;
+}
+.hero p {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+.btn-custom {
+    background-color: #198754;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0.6rem 1.5rem;
+    transition: all 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: #157347;
+    transform: scale(1.05);
+}
+
+
+section h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+section p {
+    font-size: 1.1rem;
+}
+
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.card-title {
+    ont-weight: 600;
+}
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+form label {
+    ont-weight: 600;
+}
+form .form-control {
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
+}
+form .form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25,135,84,0.25);
+}
+
+
+.btn-outline-dark, .btn-outline-primary, .btn-outline-danger {
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+.btn-outline-dark:hover, .btn-outline-primary:hover, .btn-outline-danger:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
     margin-top: auto;
+    font-size: 0.9rem;
+}
+footer a {
+    ont-weight: 600;
 }
